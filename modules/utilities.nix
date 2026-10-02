@@ -12,5 +12,6 @@
     htop
     btop
     unzip
+    git
   ];
 }
