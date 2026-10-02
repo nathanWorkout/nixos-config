@@ -12,6 +12,6 @@
     htop
     btop
     unzip
-    git
+    zoom-us
   ];
 }
