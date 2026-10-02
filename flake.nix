@@ -1,13 +1,14 @@
 {
-  description = "A very basic flake";
+  description = "Nathan's NixOS config";
 
   inputs = {
-    nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.zst";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs, ... }: {
     nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
-      modules = [ ./configuration.nix ];
+      system = "x86_64-linux";
+      modules = [ ./hosts/nixos-btw ];
     };
   };
 }
