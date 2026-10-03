@@ -11,7 +11,6 @@
     git
     (qemu.override {
       cephSupport = false;
-      glusterfsSupport = false;
     })
 
     # compilers
