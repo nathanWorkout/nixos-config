@@ -33,7 +33,10 @@
     isNormalUser = true;
     description  = "nathan";
     extraGroups  = [ "networkmanager" "wheel" ];
+    shell        = pkgs.zsh;
   };
+
+  programs.zsh.enable = true;
 
   system.stateVersion = "26.05";
 }
