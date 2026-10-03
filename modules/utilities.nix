@@ -18,7 +18,7 @@
     fd
     dust
     yazi
-    neofetch
+    fastfetch 
 
     # Some programs
     unzip
