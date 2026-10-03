@@ -21,6 +21,9 @@
 
     # Some programs
     unzip
+
+    # Neovim
     tree-sitter
+    lua-language-server
   ];
 }
