@@ -16,6 +16,7 @@
     eza
     zoxide
     fd
+    dust
 
     # Some programs
     unzip
