@@ -12,6 +12,5 @@
     htop
     btop
     unzip
-    zoom-us
   ];
 }

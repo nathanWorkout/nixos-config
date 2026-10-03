@@ -36,7 +36,9 @@
     shell        = pkgs.zsh;
   };
 
+  services.flatpak.enable = true;
   programs.zsh.enable = true;
+  programs.starship.enable = true;
 
   system.stateVersion = "26.05";
 }

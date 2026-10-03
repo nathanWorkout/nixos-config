@@ -9,6 +9,7 @@
     
     # tools
     git
+    qemu_full
 
     # compilers
     gcc
