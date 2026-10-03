@@ -21,5 +21,6 @@
 
     # Some programs
     unzip
+    tree-sitter
   ];
 }
