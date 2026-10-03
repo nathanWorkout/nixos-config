@@ -4,6 +4,7 @@
   services.printing.enable = true;
 
   environment.systemPackages = with pkgs; [
+    # Termial tools
     bat
     tree
     tealdeer
@@ -12,6 +13,11 @@
     fzf
     htop
     btop
+    eza
+    zoxide
+    fd
+
+    # Some programs
     unzip
   ];
 }
