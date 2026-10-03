@@ -9,6 +9,7 @@
     tealdeer
     wl-clipboard
     ripgrep
+    fzf
     htop
     btop
     unzip

@@ -37,7 +37,16 @@
   };
 
   services.flatpak.enable = true;
-  programs.zsh.enable = true;
+
+  programs.zsh = {
+    enable = true;
+    autosuggestions.enable = true;     
+    syntaxHighlighting.enable = true;
+  };
+
+  programs.fzf.keybindings = true;
+  programs.fzf.fuzzyCompletion = true;
+
   programs.starship.enable = true;
 
   system.stateVersion = "26.05";
