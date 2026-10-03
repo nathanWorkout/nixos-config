@@ -17,6 +17,7 @@
     zoxide
     fd
     dust
+    yazi
 
     # Some programs
     unzip
