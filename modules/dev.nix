@@ -9,7 +9,10 @@
     
     # tools
     git
-    qemu_full
+    (qemu.override {
+      cephSupport = false;
+      glusterfsSupport = false;
+    })
 
     # compilers
     gcc
