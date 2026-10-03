@@ -15,6 +15,8 @@
 
     # compilers
     gcc
+    cmake
+    gnumake
 
     # langages
     python3
