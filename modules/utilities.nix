@@ -18,6 +18,7 @@
     fd
     dust
     yazi
+    neofetch
 
     # Some programs
     unzip
