@@ -36,6 +36,12 @@
     shell        = pkgs.zsh;
   };
 
+  # swap
+  swapDevices = [{
+    device = "/var/lib/swapfile";
+    size = 8192; # 8GB
+  }];
+
   services.flatpak.enable = true;
 
   programs.zsh = {
