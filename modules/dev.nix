@@ -24,5 +24,8 @@
     python3
     zig_0_16
     zls_0_16
+
+    # terms
+    kitty
   ];
 }
