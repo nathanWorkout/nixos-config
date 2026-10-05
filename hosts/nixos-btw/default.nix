@@ -11,5 +11,6 @@
     ../../modules/gaming.nix
     ../../modules/desktop/plasma6.nix
     ../../modules/desktop/sway.nix
+    ../../modules/desktop/hyprland.nix
   ];
 }

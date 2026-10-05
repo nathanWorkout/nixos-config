@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   services.printing.enable = true;
@@ -24,6 +24,9 @@
     # Some programs
     unzip
     acpi
+
+    # browser
+    inputs.heliumnix.packages.${pkgs.system}.default
 
     # Neovim
     tree-sitter
