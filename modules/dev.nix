@@ -6,6 +6,7 @@
     vim
     neovim
     helix
+    emacs
     
     # tools
     git
@@ -17,6 +18,7 @@
     gcc
     cmake
     gnumake
+    clang-tools 
 
     # langages
     python3

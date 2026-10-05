@@ -19,9 +19,11 @@
     dust
     yazi
     fastfetch 
+    fetch
 
     # Some programs
     unzip
+    acpi
 
     # Neovim
     tree-sitter
