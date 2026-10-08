@@ -12,5 +12,6 @@
     ../../modules/desktop/plasma6.nix
     ../../modules/desktop/sway.nix
     ../../modules/desktop/hyprland.nix
+    ../../modules/desktop/vxwm.nix
   ];
 }
