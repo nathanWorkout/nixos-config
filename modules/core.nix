@@ -42,6 +42,13 @@
     size = 8192; # 8GB
   }];
 
+  # virtualization
+  virtualisation.vmware.host.enable = true;
+
+  # ssh
+  services.openssh.enable = true;
+
+  # flatpack
   services.flatpak.enable = true;
 
   programs.zsh = {

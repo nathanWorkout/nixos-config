@@ -15,5 +15,6 @@
     curl
     nmap
     wireshark
+    vmware-workstation
   ];
 }

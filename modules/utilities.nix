@@ -20,13 +20,19 @@
     yazi
     fastfetch 
     fetch
+    cmatrix
+    feh
 
     # Some programs
     unzip
+    zip
     acpi
 
     # browser
     inputs.heliumnix.packages.${pkgs.system}.default
+
+    # editors
+    onlyoffice-desktopeditors
 
     # Neovim
     tree-sitter
