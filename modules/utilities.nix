@@ -27,6 +27,7 @@
     unzip
     zip
     acpi
+    pfetch
 
     # browser
     inputs.heliumnix.packages.${pkgs.system}.default

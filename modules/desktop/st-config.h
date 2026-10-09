@@ -94,39 +94,40 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#1a1a1a",   /* 0: black   */
-	"#e05252",   /* 1: red     */
-	"#5faf5f",   /* 2: green   */
-	"#d7af5f",   /* 3: yellow  */
-	"#5f87d7",   /* 4: blue    */
-	"#af5faf",   /* 5: magenta */
-	"#5fafaf",   /* 6: cyan    */
-	"#c8c8c8",   /* 7: white   */
+        /* 8 normal colors */
+        "#5c2a20",  /* black   */
+        "#c0392b",  /* red     */
+        "#5a8a3a",  /* green   */
+        "#c0852b",  /* yellow  */
+        "#5a6ab0",  /* blue    */
+        "#a05a8a",  /* magenta */
+        "#5a9aaa",  /* cyan    */
+        "#e8d0c8",  /* white   */
 
-	/* 8 bright colors */
-	"#444444",   /* 8:  bright black   */
-	"#ff7070",   /* 9:  bright red     */
-	"#87d787",   /* 10: bright green   */
-	"#ffd787",   /* 11: bright yellow  */
-	"#87afd7",   /* 12: bright blue    */
-	"#d787d7",   /* 13: bright magenta */
-	"#87d7d7",   /* 14: bright cyan    */
-	"#ffffff",   /* 15: bright white   */
+        /* 8 bright colors */
+        "#8a4a3a",  /* bright black   */
+        "#e05050",  /* bright red     */
+        "#7aae5a",  /* bright green   */
+        "#d4a056",  /* bright yellow  */
+        "#7a8ace",  /* bright blue    */
+        "#c07aae",  /* bright magenta */
+        "#7abece",  /* bright cyan    */
+        "#ffffff",  /* bright white   */
 
-	[255] = 0,
+        [255] = 0,
 
-	"#0d0d0d",   /* 256: defaultbg — noir profond  */
-	"#d0d0d0",   /* 257: defaultfg — gris clair    */
-	"#d0d0d0",   /* 258: defaultfg alias           */
+        "#f7c5b8",  /* background - ton saumon */
+        "#5c2a20",  /* foreground - bordeaux foncé */
+        "#5c2a20",  /* cursor     */
+        "#c0392b",  /* cursor rev */
+};
 
 unsigned int defaultfg = 258;
 unsigned int defaultbg = 256;
 unsigned int defaultcs = 259;
 static unsigned int defaultrcs = 257;
-	"#FF8072",   /* 259: cursor    — saumon        */
-};
 
 /*
  * Default shape of cursor

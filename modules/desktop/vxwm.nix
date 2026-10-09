@@ -3,10 +3,14 @@
 
 let
   st-custom = pkgs.st.overrideAttrs (old: {
-    postPatch = ''
+    preBuild = ''
       cp ${./st-config.h} config.h
     '';
   });
+
+  yazi-vxwm = pkgs.writeShellScriptBin "yaziv" ''
+    YAZI_CONFIG_HOME="/home/nathan/.config/yazi-vxwm" exec ${pkgs.yazi}/bin/yazi "$@"
+  '';
 
   vxwm = pkgs.stdenv.mkDerivation {
     pname = "vxwm";
@@ -65,6 +69,7 @@ in
     vxwm
     dmenu
     st-custom
+    yazi-vxwm
     xinit
     xsetroot
     feh

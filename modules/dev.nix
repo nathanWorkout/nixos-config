@@ -7,9 +7,11 @@
     neovim
     helix
     emacs
+    zed-editor
     
     # tools
     git
+    nodejs
     (qemu.override {
       cephSupport = false;
     })

@@ -62,5 +62,7 @@
 
   programs.starship.enable = true;
 
+  programs.gamemode.enable = true;
+
   system.stateVersion = "26.05";
 }
