@@ -8,7 +8,7 @@
     settings.PasswordAuthentication = false;   # clé SSH uniquement
   };
 
-  programs.ssh.startAgent = true;
+  programs.ssh.startAgent = false;
 
   environment.systemPackages = with pkgs; [
     wget
