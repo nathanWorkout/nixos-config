@@ -28,6 +28,8 @@
     zip
     acpi
     pfetch
+    krita
+    obs-studio
 
     # browser
     inputs.heliumnix.packages.${pkgs.system}.default
