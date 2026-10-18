@@ -51,6 +51,9 @@
   # flatpack
   services.flatpak.enable = true;
 
+  # unity
+  programs.nix-ld.enable = true;
+
   programs.zsh = {
     enable = true;
     autosuggestions.enable = true;     
