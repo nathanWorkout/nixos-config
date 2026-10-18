@@ -32,7 +32,6 @@
     pkgs.obsidian
     pkgs.p3x-onenote
     pkgs.blender
-    pkgs.unityhub
     pkgs.vscode-fhs
   ];
 }
