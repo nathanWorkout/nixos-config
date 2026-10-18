@@ -52,7 +52,15 @@
   services.flatpak.enable = true;
 
   # unity
-  programs.nix-ld.enable = true;
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      libGL
+      glib
+    ];
+  };
 
   programs.zsh = {
     enable = true;
