@@ -1,5 +1,10 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
+let
+  sddm-astronaut = pkgs.sddm-astronaut.override {
+    embeddedTheme = "jake_the_dog";
+  };
+in
 {
   # Boot
   boot.loader.systemd-boot.enable = true;
@@ -33,40 +38,26 @@
     isNormalUser = true;
     description  = "nathan";
     extraGroups  = [ "networkmanager" "wheel" ];
-    shell        = pkgs.zsh;
+    shell        = pkgs.fish;
   };
 
-  # swap
+  # Swap
   swapDevices = [{
     device = "/var/lib/swapfile";
-    size = 8192; # 8GB
+    size = 8192;
   }];
 
-  # virtualization
+  # Virtualization
   virtualisation.vmware.host.enable = true;
 
-  # ssh
+  # SSH
   services.openssh.enable = true;
 
-  # flatpack
+  # Flatpak
   services.flatpak.enable = true;
 
-  # unity
-  programs.nix-ld = {
-    enable = true;
-    libraries = with pkgs; [
-      stdenv.cc.cc.lib
-      zlib
-      libGL
-      glib
-    ];
-  };
-
-  programs.zsh = {
-    enable = true;
-    autosuggestions.enable = true;     
-    syntaxHighlighting.enable = true;
-  };
+  # Zsh
+  programs.fish.enable = true;
 
   programs.fzf.keybindings = true;
   programs.fzf.fuzzyCompletion = true;
@@ -74,6 +65,19 @@
   programs.starship.enable = true;
 
   programs.gamemode.enable = true;
+
+  # SDDM
+  environment.systemPackages = [ sddm-astronaut ];
+
+  # samba
+  services.tailscale.enable = true;
+
+  services.displayManager.sddm = {
+    enable = true;
+    package = lib.mkForce pkgs.kdePackages.sddm;
+    extraPackages = with pkgs; [ kdePackages.qtmultimedia ];
+    theme = "sddm-astronaut-theme";
+  };
 
   system.stateVersion = "26.05";
 }

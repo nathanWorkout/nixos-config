@@ -2,7 +2,6 @@
 
 {
   services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
   services.xserver.xkb = {
@@ -33,5 +32,7 @@
     pkgs.p3x-onenote
     pkgs.blender
     pkgs.vscode-fhs
+    pkgs.godot_4-mono pkgs.dotnet-sdk
+    pkgs.discord
   ];
 }
